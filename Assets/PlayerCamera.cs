@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public float Speed = 0.25f;
+    public float Speed = 15.0f;
     public float DistanceBehind = 5.0f;
-    public float DistanceAbove = 1.0f;
+    public float DistanceAbove = 2.0f;
     private GameObject target;
 
     // Start is called before the first frame update
@@ -18,8 +18,8 @@ public class PlayerCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var newPosition = target.transform.position - target.transform.forward * DistanceBehind + (target.transform.up * DistanceAbove);
-        transform.position = Vector3.MoveTowards(transform.position, newPosition, Speed);
-        transform.rotation = target.transform.rotation;
+        var newPosition = target.transform.position - (target.transform.forward * DistanceBehind) + (target.transform.up * DistanceAbove);
+        transform.position = Vector3.MoveTowards(transform.position, newPosition, Time.deltaTime * Speed);
+        transform.rotation = Quaternion.LookRotation(target.transform.position - transform.position);
     }
 }

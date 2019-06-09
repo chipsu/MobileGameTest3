@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public float MoveSpeed = 5.0f;
+    public float MoveSpeed = 10.0f;
     public float TurnSpeed = 2.0f;
     public float JumpSpeed = 5.0f;
     public GameObject Projectile;
