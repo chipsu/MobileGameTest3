@@ -19,7 +19,7 @@ public class PlayerInput : MonoBehaviour
     Quaternion rotationInput;
     new Collider collider;
 
-    GameObject Target
+    public GameObject Target
     {
         get
         {
@@ -50,10 +50,10 @@ public class PlayerInput : MonoBehaviour
 
     void UpdateInput()
     {
-        if (Input.GetButtonDown("Fire1"))
+        /* if (Input.GetButtonDown("Fire1"))
         {
             Fire();
-        }
+        } */
         if (Input.GetButtonDown("Fire2"))
         {
             NextTarget();

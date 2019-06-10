@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     public float Speed = 10.0f;
     public GameObject Target;
+    public bool TargetSelf;
     Transform particles;
 
     // Start is called before the first frame update
@@ -26,7 +27,10 @@ public class Projectile : MonoBehaviour
             else
             {
                 transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, Time.deltaTime * Speed);
-                particles.rotation = Quaternion.LookRotation(transform.position - Target.transform.position);
+                if (particles)
+                {
+                    particles.rotation = Quaternion.LookRotation(transform.position - Target.transform.position);
+                }
             }
         }
     }
