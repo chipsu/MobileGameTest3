@@ -2801,11 +2801,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Move
+  m_Text: 'Move (forward/back/strafe)
 
     Swipe any direction: Dash?
 
-    Tap: 180 turn'
+    Tap:
+    180 turn'
 --- !u!222 &1085480659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4638,14 +4639,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Camera
+  m_Text: 'Camera (player fwd vector)
 
-    Swipe up: jump
+    Swipe up: jump1
 
-    Swipe down: maybe slide
+    Swipe down: maybe
+    slide
 
-    Swipe left/right:
-    target
+    Swipe left/right: target
 
     tap: cast active spell?'
 --- !u!222 &1706283034
