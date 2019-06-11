@@ -2805,8 +2805,8 @@ MonoBehaviour:
 
     Swipe any direction: Dash?
 
-    Tap:
-    180 turn'
+    Tap: 180
+    turn'
 --- !u!222 &1085480659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3822,6 +3822,8 @@ GameObject:
   - component: {fileID: 1401710923}
   - component: {fileID: 1401710927}
   - component: {fileID: 1401710922}
+  - component: {fileID: 1401710929}
+  - component: {fileID: 1401710928}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3937,6 +3939,40 @@ MonoBehaviour:
   JumpSpeed: 5
   Projectile: {fileID: 8346234678612462584, guid: 9b8d49e3295caf644ab4ce10f7e11038,
     type: 3}
+--- !u!114 &1401710928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401710921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1401710929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401710921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1429334838
 GameObject:
   m_ObjectHideFlags: 0
@@ -5599,10 +5635,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
